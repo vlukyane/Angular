@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+    <div ng-controller="firstCtrl">
+        {{hello}}
+        {{myFunction()}}
+        <button ng-click="setHello('new 123')">Click me!</button>
+        <button ng-click="setHello('new 546')">Click me!</button>
+        {{myFactory.hello()}}
+    </div>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
