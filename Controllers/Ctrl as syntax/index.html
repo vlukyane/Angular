@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div ng-controller="mainCtrl as mainCtrl">
+        <div ng-controller="firstCtrl">
+            <div ng-controller="secondCtrl as secondCtrl">
+                {{mainCtrl.myInfo}}
+                <br>
+                {{firstCtrl.myInfo}}
+                <br>
+                {{secondCtrl.myInfo}}
+                <button ng-click="mainCtrl.addInfo()">Add info</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
